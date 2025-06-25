@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc bé 2k7 thi tốt ❤️</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+
+        }
+
+
+
+        body {
+            margin: 0;
+            height: 100%;
+            background: #000;
+            background-image: url("https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20b%E1%BA%A7u%20tr%E1%BB%9Di/2/hinh-nen-bau-troi-39.jpg");
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body * {
+            user-select: none;
+        }
+
+        .loichuc {
+            position: fixed;
+            left: 50%;
+            top: 0;
+            font-size: 32px;
+            color: aqua;
+            opacity: 1;
+            /* 4 : 1 , 3 : 0.9 , 2 : 0.8 , 1 : 0.7 */
+            animation: roiXuongDay 12s ease-in forwards;
+            transition: transform 0.5s, box-shadow 0.5s;
+            box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.5);
+        }
+
+
+
+        @keyframes roiXuongDay {
+            from {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            to {
+                transform: translateX(-50%) translateY(110vh);
+            }
+        }
+
+        #start {
+            font-size: 30px;
+        }
+
+        #uia {
+            position: fixed;
+            top: 0;
+            right: 1%;
+            height: 200px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="nhac" loop>
+        <source src="uia.mp3" type="audio/mpeg">
+    </audio>
+    <span id="start">Nhấn để bắt đầu</span>
+    <img id="uia" src="https://blog.coccoc.com/wp-content/uploads/2025/05/uia-cat-meo-uia.gif" alt="">
+</body>
+<script>
+    window.onload = () => {
+        document.addEventListener("click", function () {
+            const start = document.getElementById("start");
+            start.style.display = 'none';
+            const u = document.getElementById("uia");
+            u.style.display = 'block';
+            const audio = document.getElementById("nhac");
+            audio.play();
+            audio.volume = 0.6;
+            sinhloichuc();
+        }, { once: true });
+    };
+
+    function sinhloichuc() {
+        setInterval(() => { // tang 1
+            const span = document.createElement("span");
+            span.textContent = arr[i];
+            i = (i + 1) % arr.length;
+            span.classList.add("loichuc");
+            span.style.opacity = 0.7;
+            span.style.left = Math.random() * 90 + 5 + "%";
+            const giay = Math.floor(Math.random() * 2 + 15);
+            span.style.animation = `roiXuongDay ${giay}s ease-in forwards`;
+            span.style.zIndex = 1;
+            setInterval(() => {
+                span.remove();
+            }, giay * 1000);
+            document.body.appendChild(span);
+        }, 3000);
+
+        setInterval(() => { // tang 2
+            const span = document.createElement("span");
+            span.textContent = arr[i];
+            i = (i + 1) % arr.length;
+            span.classList.add("loichuc");
+            span.style.opacity = 0.8;
+            span.style.left = Math.random() * 90 + 5 + "%";
+            const giay = Math.floor(Math.random() * 2 + 12);
+            span.style.animation = `roiXuongDay ${giay}s ease-in forwards`;
+            span.style.zIndex = 2;
+            setInterval(() => {
+                span.remove();
+            }, giay * 1000);
+            document.body.appendChild(span);
+        }, 2700);
+        setInterval(() => { // tang 3
+            const span = document.createElement("span");
+            span.textContent = arr[i];
+            i = (i + 1) % arr.length;
+            span.classList.add("loichuc");
+            span.style.opacity = 0.9;
+            span.style.left = Math.random() * 90 + 5 + "%";
+            const giay = Math.floor(Math.random() * 2 + 10);
+            span.style.animation = `roiXuongDay ${giay}s ease-in forwards`;
+            span.style.zIndex = 3;
+            setInterval(() => {
+                span.remove();
+            }, giay * 1000);
+            document.body.appendChild(span);
+        }, 1800);
+        setInterval(() => { // tang 4
+            const span = document.createElement("span");
+            span.textContent = arr[i];
+            i = (i + 1) % arr.length;
+            span.classList.add("loichuc");
+            span.style.opacity = 1;
+            span.style.left = Math.random() * 90 + 5 + "%";
+            const giay = Math.floor(Math.random() * 2 + 6);
+            span.style.animation = `roiXuongDay ${giay}s ease-in forwards`;
+            span.style.zIndex = 4;
+            setInterval(() => {
+                span.remove();
+            }, giay * 1000);
+            document.body.appendChild(span);
+        }, 800);
+    }
+    let i = 0;
+    const arr = [
+        "Thi tốt nhé!",
+        "Chúc may mắn!",
+        "Làm bài suôn sẻ!",
+        "Cố lên bạn nhé!",
+        "Tự tin chiến thắng!",
+        "Bình tĩnh tự tin!",
+        "Đừng lo, bạn làm được!",
+        "Thi đâu đỗ đó!",
+        "Làm bài như ý!",
+        "Điểm cao rực rỡ!",
+        "Kiến thức vững vàng!",
+        "Chúc bạn thành công!",
+        "Chinh phục đề thi!",
+        "Mọi thứ sẽ ổn!",
+        "Bạn giỏi mà!",
+        "Chiến thôi!",
+        "Đề dễ nhé!",
+        "Đừng căng thẳng!",
+        "Tâm lý vững vàng!",
+        "Trí tuệ sáng suốt!",
+        "Làm bài chuẩn xác!",
+        "Thi xong đi chơi!",
+        "Một phát ăn ngay!",
+        "Đừng quên kiểm tra!",
+        "Chúc thi rực rỡ!",
+        "Đủ điểm qua môn!",
+        "May mắn bên bạn!",
+        "Tập trung hết mình!",
+        "Học gì trúng đó!",
+        "Đừng bỏ sót câu!",
+        "Nhớ đọc kỹ đề!",
+        "Cố gắng hết sức!",
+        "Tự tin lên nhé!",
+        "Không bỏ cuộc!",
+        "Vượt vũ môn thôi!",
+        "Thi nhẹ nhàng nhé!",
+        "Điểm cao nhé!",
+        "Bạn làm được mà!",
+        "Bình tĩnh là thắng!",
+        "Chúc thi suôn sẻ!",
+        "Sáng suốt, tỉnh táo!",
+        "Tất cả sẽ ổn!",
+        "Đề thi dễ nhé!",
+        "Giữ sức khỏe nhé!",
+        "Chiến thắng bản thân!",
+        "Thi tốt cực kỳ!",
+        "Chúc đỗ cao nhé!",
+        "Vững vàng lên nào!",
+        "Xử đẹp đề thi!",
+        "Đạt kết quả tốt!",
+        "Kiên trì bạn nhé!",
+        "Chắc chắn qua môn!",
+        "Làm bài không vấp!",
+        "Tự tin lên nào!",
+        "Bình tĩnh xử lý!",
+        "Bắn trúng mục tiêu!",
+        "Tất thắng mọi môn!",
+        "Nhẹ nhàng qua ải!",
+        "Gặt hái thành công!",
+        "Bạn là số 1!",
+        "Mọi thứ trong tầm tay!",
+        "Đạt được mong muốn!",
+        "Thành công rực rỡ!",
+        "Cố gắng thêm chút!",
+        "Giữ vững tinh thần!",
+        "Chiến hết sức!",
+        "Nắm chắc kiến thức!",
+        "Thi không run tay!",
+        "Đầu óc sáng suốt!",
+        "Bạn làm giỏi lắm!",
+        "Điểm cao ngất ngưởng!",
+        "Không có gì khó!",
+        "Làm bài trơn tru!",
+        "Bạn ổn cả mà!",
+        "Cứ bình tĩnh thôi!",
+        "Thần may mắn đến!",
+        "Đừng quên thở sâu!",
+        "Tỉnh táo mọi lúc!",
+        "Kiểm tra kỹ càng!",
+        "Giữ bình tĩnh nhé!",
+        "Mọi thứ đã sẵn sàng!",
+        "Bạn đủ năng lực!",
+        "Học gì nhớ nấy!",
+        "Thi tốt như mong!",
+        "Điểm giỏi luôn nha!",
+        "Đề trúng tủ nha!",
+        "Rinh điểm 10 nhé!",
+        "Trả bài đầy đủ!",
+        "Đừng sợ chi cả!",
+        "Tự tin tuyệt đối!",
+        "Bật chế độ học bá!",
+        "Cố nốt kỳ này!",
+        "Thi xong nghỉ khỏe!",
+        "Bám sát đề bài!",
+        "Phá đảo kỳ thi!",
+        "Tập trung cao độ!",
+        "Bá đạo phòng thi!",
+        "Làm chủ kỳ thi!",
+        "Vững tin bản thân!",
+        "Thi không vấp váp!",
+        "Đề thi thân thiện!",
+        "Gặp câu dễ trước!",
+        "Chiến thắng chính mình!"
+    ];
+
+
+</script>
+
+</html>
